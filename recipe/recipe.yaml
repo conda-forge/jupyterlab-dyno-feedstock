@@ -1,6 +1,6 @@
 context:
   name: jupyterlab-dyno
-  version: 0.0.1
+  version: 0.0.2
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/EconForge/jupyterlab-dyno/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 1f57d3964c1b7d6bc5f7288482a179cd1525c5bba7f826d5c7d151a7ebb8ad57
+  sha256: b01ccd1dc5801b79cc39c1aabc468409a5ffacd1e41b973c72ae801f
 
 build:
   noarch: python
@@ -29,6 +29,7 @@ requirements:
     - dyno >=0.1.5.dev5
     - xeus-python >=0.17.4,<0.18
     - nlohmann_json ==3.11.3
+    - jupyterlab-myst >=2.4.2,<3
 
 tests:
   - python:
