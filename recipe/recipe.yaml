@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/EconForge/jupyterlab-dyno/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 0d3a6a639751c6e069fcb65a16e69e22d19d4479aecb4fbaee9b851af31c598b
+  sha256: d615010e22eafd0d29c536f89516c10a3c9df488783c44c0b5ff3e49ead3271e
 
 build:
   noarch: python
