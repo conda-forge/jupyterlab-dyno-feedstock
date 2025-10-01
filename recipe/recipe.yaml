@@ -1,6 +1,6 @@
 context:
   name: jupyterlab-dyno
-  version: 0.0.2.1
+  version: 0.0.2.2
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/EconForge/jupyterlab-dyno/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: b49fe2dc029cf8efb4b4aa192d4ff40dba1670517193b766b682c26e20c13c2a
+  sha256: 0d3a6a639751c6e069fcb65a16e69e22d19d4479aecb4fbaee9b851af31c598b
 
 build:
   noarch: python
