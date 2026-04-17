@@ -27,10 +27,10 @@ requirements:
     - jupyterlab >=4.0.0,<5
   run:
     - python >=${{ python_min }}
-    - dyno >=0.1.7
+    - dyno >=0.1.7 
     - xeus-python >=0.17.4,<0.18
     - nlohmann_json ==3.11.3
-    - jupyterlab-myst >=2.0.0   # this is to satisfy the verson of pyzmq on prefix.dev
+    - jupyterlab-myst >=2.0.0   # this is to satisfy the verson of  pyzmq on prefix.dev
 
 tests:
   - python:
