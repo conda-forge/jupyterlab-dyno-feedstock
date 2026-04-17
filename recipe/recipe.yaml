@@ -8,7 +8,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/EconForge/jupyterlab-dyno/archive/refs/tags/{{ version }}.tar.gz
+  url: https://github.com/EconForge/jupyterlab-dyno/archive/refs/tags/${{ version }}.tar.gz
   sha256: 79705f71b356e3483791b2f9599414f252cac0e717e9b1cd4b026a1820638706
 
 build:
