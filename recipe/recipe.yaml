@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: pip install . --no-deps -vv --no-build-isolation --ignore-installed --no-index
 
 requirements:
@@ -28,8 +28,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - dyno >=0.1.7 
-    - xeus-python >=0.17.4,<0.18
-    - nlohmann_json ==3.11.3
+    - xeus-python >=0.19,<0.20
+    #- nlohmann_json ==3.12
     - jupyterlab-myst >=2.0.0   # this is to satisfy the verson of  pyzmq on prefix.dev
 
 tests:
