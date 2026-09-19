@@ -1,6 +1,6 @@
 context:
   name: jupyterlab-dyno
-  version: "0.0.3"
+  version: "0.0.3.5"
   python_min: "3.12"
 
 package:
@@ -9,16 +9,16 @@ package:
 
 source:
   url: https://github.com/EconForge/jupyterlab-dyno/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 79705f71b356e3483791b2f9599414f252cac0e717e9b1cd4b026a1820638706
+  sha256: c8e1c24921dfe874bedf4e7e5ed9e50c5d102eb35571d84f906abda4175b645b
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: pip install . --no-deps -vv --no-build-isolation --ignore-installed --no-index
 
 requirements:
   host:
-    - python ${{ python_min }}.*  
+    - python ${{ python_min }}.*
     - hatchling >=1.5.0
     - pip >=25.1.1,<26
     - nodejs >=24.4.0,<24.5
@@ -27,7 +27,7 @@ requirements:
     - jupyterlab >=4.0.0,<5
   run:
     - python >=${{ python_min }}
-    - dyno >=0.1.7 
+    - dyno >=0.1.7
     - xeus-python >=0.18
     #- nlohmann_json ==3.12
     - jupyterlab-myst >=2.0.0   # this is to satisfy the verson of  pyzmq on prefix.dev
